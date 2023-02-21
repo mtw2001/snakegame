@@ -15,6 +15,12 @@ var lose;
 var pop;
 let score = 0;
 
+function preload() {
+  pop = loadSound('pop.mp3');
+  lose = loadSound('lose.mp3');
+}
+
+
 function setup() {
   createCanvas(gridWidth, gridHeight);
   if (score > 10) {
@@ -24,8 +30,6 @@ function setup() {
   }
   snake = new Snake();
   spawnFood();
-  pop = loadSound('pop.mp3');
-  lose = loadSound('lose.mp3');
 }
 
 function draw() {
