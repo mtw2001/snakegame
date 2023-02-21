@@ -16,8 +16,8 @@ var pop;
 let score = 0;
 
 function preload() {
-  pop = loadSound('pop.mp3');
-  lose = loadSound('lose.mp3');
+  pop = loadSound('./pop.mp3');
+  lose = loadSound('./lose.mp3');
 }
 
 
